@@ -1,0 +1,56 @@
+header {
+    display: block;
+    width: 100%;
+    background-color: var(--bg-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    /* border: 1px solid black; */
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 35px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-color);
+    gap: 0.4em;
+}
+
+.logo .fa-house {
+    font-size: 19px;
+    color: var(--main-color);
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    padding: 8px 17px;
+    color: var(--text-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    transition: all 0.4s ease-in-out;
+
+}
+
+.bars {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}

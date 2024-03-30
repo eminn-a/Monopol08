@@ -1,0 +1,50 @@
+.footer {
+    background: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 5rem 0 0 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1px, auto));
+}
+
+.footer-container h2 {
+    font-size: 2em;
+    font-weight: 800;
+    padding-left: 1em;
+}
+
+.footer-container .footer-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-box h3 {
+    margin-bottom: 0.6rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.footer-box a {
+    font-size: 0.8rem;
+    color: var(--bg-color);
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.footer-box a:hover {
+    color: var(--text-color);
+}
+
+.socials a {
+    font-size: 20px;
+    margin-right: 1em;
+}
+
+.copyrights {
+    text-align: center;
+    font-weight: 100;
+    font-size: 14px;
+    padding-top: 1em;
+}

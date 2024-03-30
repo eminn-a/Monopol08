@@ -1,0 +1,36 @@
+.sales {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 2.5rem;
+}
+
+.sales .box {
+    padding: 20px;
+    background-color: var(--bg-color);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.sales .box:hover {
+    transition: all 0.4s ease-in-out;
+    box-shadow: 2px 2px 18px var(--main-color);
+    background: var(--main-color);
+}
+
+.sales .box .fa-solid {
+    padding: 10px;
+    border-radius: 50%;
+    background: var(--bg-color);
+    color: var(--main-color);
+}
+
+.sales .box h3 {
+    font-size: 1.1rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.sales .box p {
+    font-size: 0.95rem;
+    margin: 1rem 0 0.5rem;
+}

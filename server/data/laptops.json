@@ -1,0 +1,41 @@
+{
+    "765347f7-779a-4ff4-87b5-411ce79ab512": {
+        "brand": "ASUS ROG Zephyrus Duo 16",
+        "cpu": "AMD Ryzen 9 7945HX (2.5/5.4GHz, 64M)",
+        "gpu": "NVIDIA RTX 4080 12 GB GDDR6 DLSS 3",
+        "ram": "32 GB DDR5 4800 MHz",
+        "storage": "1TB M.2 NVMe SSD",
+        "display": "16\" (40.64 см) WQXGA",
+        "os": "Windows 11",
+        "imgUrl": "https://ardes.bg/uploads/p/asus-gx650-rog-zephyrus-duo-16-382852.jpg",
+        "price": "7799",
+        "description": "Лаптоп ASUS ROG Zephyrus Duo 16 2023 GX650PZ-NM014X, 16.0\", WQXGA, AMD Ryzen 9 7945HX (2.5/5.4GHz, 64M), NVIDIA RTX 4080 12 GB GDDR6 DLSS 3, 32 GB, 1 TB SSD - 90NR0CF1-M000K0",
+        "_id": "765347f7-779a-4ff4-87b5-411ce79ab512"
+    },
+    "596c47c4-07ec-4d6c-9f89-4bfb90e306a0": {
+        "brand": "Lenovo Legion 9",
+        "cpu": "Intel Core i9-13980HX (1.6/5.6GHz, 36M)",
+        "gpu": "NVIDIA RTX 4090 16GB GDDR6 DLSS 3",
+        "ram": "64 GB DDR5 5600 MHz",
+        "storage": "2 x 1 TB SSD",
+        "display": "16\" (40.64 см) 3.2K",
+        "os": "Windows 11",
+        "imgUrl": "https://ardes.bg/uploads/p/lenovo-legion-9-16-g8-494246.jpg",
+        "price": "10999",
+        "description": "Лаптоп Lenovo Legion 9 16IRX8, 16.0\", 3.2K, Intel Core i9-13980HX (1.6/5.6GHz, 36M), NVIDIA RTX 4090 16GB GDDR6 DLSS 3, 64 GB, 2 TB SSD - 83AG000CBM ",
+        "_id": "596c47c4-07ec-4d6c-9f89-4bfb90e306a0"
+    },
+    "ba247c97-268c-48a8-a5e4-5181e9287d97": {
+        "brand": "ASUS ROG Zephyrus M16",
+        "cpu": "Intel Core i9-13900H (1.9/5.4GHz, 24M)",
+        "gpu": "NVIDIA RTX 4090 Max-Q 16GB GDDR6 DLSS 3",
+        "ram": "64 GB DDR5 4800 MHz",
+        "storage": "2 TB M.2 NVMe SSD",
+        "display": "16\" (40.64 см) WQXGA ROG Nebula HDR",
+        "os": "Windows 11",
+        "imgUrl": "https://ardes.bg/uploads/p/asus-gu604-rog-zephyrus-m16-2023-443547.jpg",
+        "price": "8169",
+        "description": "Лаптоп ASUS ROG Zephyrus M16 2023 GU604VY-NM001X, 16.0\", WQXGA, Intel Core i9-13900H (1.9/5.4GHz, 24M), NVIDIA RTX 4090 Max-Q 16GB GDDR6 DLSS 3, 64 GB, 2 TB SSD - 90NR0BR3-M000T0_64GB",
+        "_id": "ba247c97-268c-48a8-a5e4-5181e9287d97"
+    }
+}
