@@ -6,11 +6,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './home-current/home.component';
 import { HeroComponent } from './hero/hero.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { SalesComponent } from './sales/sales.component';
 import { PropertiesComponent } from './properties/properties.component';
+import { UserModule } from './user/user.module';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { PropertiesComponent } from './properties/properties.component';
     HttpClientModule,
     CoreModule,
     SharedModule,
+    UserModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
