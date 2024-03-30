@@ -3,12 +3,13 @@
         <h2>Login to Continue</h2>
         <p>Welcome back!</p>
         <!-- login form -->
-        <form action="">
+        <form>
             <span>Enter your email adress</span>
-            <input type="email" name="" id="" placeholder="Your@gmail.com" required>
+            <input type="email" name="" id="" placeholder="Your@gmail.com" #inputEmail required>
             <span>Enter your password</span>
-            <input type="password" name="" id="" placeholder="Password" required>
-            <input type="submit" value="Login" class="button">
+            <input type="password" name="" id="" placeholder="Password" #inputPassword required>
+            <input type="submit" value="Login" class="button"
+                (click)="login($event,inputEmail.value,inputPassword.value)">
             <a href="">Forget Password?</a>
         </form>
         <a routerLink="/register" class="btn">Sign up now</a>

@@ -15,9 +15,10 @@
             <!-- <li><a routerLink="">Add Properties</a></li> -->
         </ul>
         <!-- login button -->
-        <div>
-            <a routerLink="/login" class="btn">Log In</a>
-            <a routerLink="/register" class="btn">Log Out</a>
+        <div class="user-navbar">
+            <p *ngIf="isLoggedIn">Wellcome <br>{{email}}</p>
+            <a routerLink="/login" class="btn" *ngIf="!isLoggedIn">Log In</a>
+            <a (click)="logou()" class="btn" *ngIf="isLoggedIn">Log Out</a>
         </div>
 
     </div>

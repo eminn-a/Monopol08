@@ -54,3 +54,15 @@ header {
     cursor: pointer;
     display: none;
 }
+
+.user-navbar {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.user-navbar p {
+    font-size: 11px;
+    text-align: center;
+    font-style: italic;
+}

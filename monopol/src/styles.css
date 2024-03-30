@@ -44,8 +44,23 @@ section {
     background-color: var(--main-color);
     color: var(--bg-color);
     border-radius: 5rem;
+    cursor: pointer;
 }
 
 .btn:hover {
     background: #3492fd;
+}
+
+.btn-red {
+    padding: 8px 22px;
+    background-color: #DC143C;
+    color: var(--bg-color);
+    border-radius: 5rem;
+}
+
+.btn-green {
+    padding: 8px 22px;
+    background-color: green;
+    color: var(--bg-color);
+    border-radius: 5rem;
 }

@@ -12,7 +12,7 @@ export class PropertiesComponent implements OnInit {
 
   constructor(private api: ApiService) {}
   ngOnInit(): void {
-    this.api.getRecentProperties(6).subscribe((properties) => {
+    this.api.getRecentProperties(3).subscribe((properties) => {
       console.log(properties);
       this.properties = properties;
     });

@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './single-property.component.html',
   styleUrls: ['./single-property.component.css'],
 })
-export class SinglePropertyComponent {}
+export class SinglePropertyComponent {
+  constructor() {}
+}
