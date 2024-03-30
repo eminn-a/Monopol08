@@ -18,7 +18,7 @@
     background: var(--main-color);
 }
 
-.sales .box .fa-solid {
+.sales .box i {
     padding: 10px;
     border-radius: 50%;
     background: var(--bg-color);

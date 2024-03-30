@@ -1,0 +1,32 @@
+.single-house {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, auto));
+    margin-top: 2em;
+    min-height: 80vh;
+}
+
+.single-house-container {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.single-house-img img {
+    width: 600px;
+    border-radius: 3rem 0 3rem 3rem;
+}
+
+.single-house-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.single-house-text h2 {
+    margin-bottom: 0.3em;
+    font-size: 2rem;
+}
+
+.single-house-text span {
+    font-weight: 800;
+}

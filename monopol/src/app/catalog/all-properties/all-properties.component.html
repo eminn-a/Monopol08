@@ -7,7 +7,7 @@
     <div class="properties-container container">
         <!-- box 1 -->
         <div class="box" *ngFor="let el of allProperties">
-            <a href="singleProperty.html">
+            <a [routerLink]="el._id">
                 <img src={{el.picture}} alt="">
                 <h3>${{el.price}}</h3>
                 <div class="content">
