@@ -1,0 +1,33 @@
+<section class="properties container" id="properties">
+    <div class="heading">
+        <h2>Our Featured Properties</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, nisi?<br>Lorem ipsum, dolor sit amet
+            consectetur adipisicing.</p>
+    </div>
+    <div class="properties-container container">
+        <!-- box 1 -->
+        <div class="box" *ngFor="let el of allProperties">
+            <a href="singleProperty.html">
+                <img src={{el.picture}} alt="">
+                <h3>${{el.price}}</h3>
+                <div class="content">
+                    <div class="text">
+                        <h3>The Place</h3>
+                        <p>{{el.place}}</p>
+                    </div>
+                    <div class="icons">
+                        <div>
+                            <i class="fa-solid fa-bed"></i> <span> {{el.bedrom}}</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-bath"></i> <span> {{el.wc}}</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-square-full"></i><span> {{el.m2}}M²</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>

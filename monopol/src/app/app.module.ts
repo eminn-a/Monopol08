@@ -6,22 +6,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
-import { HomeComponent } from './home-current/home.component';
-import { HeroComponent } from './hero/hero.component';
-import { AboutUsComponent } from './about-us/about-us.component';
-import { SalesComponent } from './sales/sales.component';
-import { PropertiesComponent } from './properties/properties.component';
 import { UserModule } from './user/user.module';
+import { HomeModule } from './home/home.module';
+import { CatalogModule } from './catalog/catalog.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    HeroComponent,
-    AboutUsComponent,
-    SalesComponent,
-    PropertiesComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -29,6 +19,8 @@ import { UserModule } from './user/user.module';
     CoreModule,
     SharedModule,
     UserModule,
+    HomeModule,
+    CatalogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

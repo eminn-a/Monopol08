@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../api.service';
-import { Property } from '../types/property';
+import { ApiService } from '../../api.service';
+import { Property } from '../../types/property';
 
 @Component({
   selector: 'app-properties',

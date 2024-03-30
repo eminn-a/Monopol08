@@ -1,7 +1,7 @@
 .home {
     margin-top: 5em;
     background: linear-gradient(rgba(0, 0, 0, 0.011), rgba(0, 0, 0, 0.6)),
-        url(../../assets/how-to-design-a-house.jpg);
+        url(../../../assets/how-to-design-a-house.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 460px;

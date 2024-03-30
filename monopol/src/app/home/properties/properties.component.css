@@ -1,0 +1,98 @@
+.properties-container .box a {
+    text-decoration: none;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 4em;
+    margin-top: 2em;
+}
+
+.heading span {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.heading h2 {
+    font-size: 1.7rem;
+}
+
+.heading p {
+    font-size: 0.93;
+}
+
+.properties {
+    background: #fbfbfb;
+    border-radius: 2rem;
+}
+
+.properties-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 3rem;
+    padding: 0 10px;
+    margin-bottom: 2em;
+}
+
+.properties-container .box {
+    background: var(--bg-color);
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+
+}
+
+.properties-container .box:hover {
+    transform: translateY(-10px);
+    transition: 0.4s;
+}
+
+.properties-container .box img {
+    border-radius: 1rem;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.properties-container .box h3 {
+    font-size: 1em;
+    font-weight: 600;
+    float: right;
+    color: var(--text-color);
+}
+
+.properties-container .box .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.properties-container .box .content .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.properties-container .box .content .text h3 {
+    font-weight: 800;
+    columns: var(--text-color);
+
+}
+
+.properties-container .box .content .text p {
+    font-weight: 1em;
+    color: var(--text-color);
+
+}
+
+.properties-container .box .content .icons {
+    display: flex;
+    gap: 0.7em;
+    padding-top: 0.7em;
+    color: var(--text-color);
+}
+
+.properties-container .box .content .icons i {
+    font-size: 112px;
+
+}

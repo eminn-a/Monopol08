@@ -1591,6 +1591,54 @@
         _createdOn: 1614260681375,
         _id: "3",
       },
+      4: {
+        _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
+        place: "Varna",
+        street: "ul.Varna nqkade",
+        m2: "120",
+        year: "2020",
+        bedrom: "3",
+        wc: "2",
+        price: "45000",
+        description:
+          "I dont know wha to write here and write some text randomly",
+        picture:
+          "https://www.mydomaine.com/thmb/bepet4VMGUG70sCLFNQRdZm9bbg=/2048x0/filters:no_upscale():strip_icc()/SuCasaDesign-Modern-9335be77ca0446c7883c5cf8d974e47c.jpg",
+        _createdOn: 1614260681375,
+        _id: "4",
+      },
+      5: {
+        _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
+        place: "Haskovo",
+        street: "s.Karamanci",
+        m2: "220",
+        year: "2021",
+        bedrom: "4",
+        wc: "3",
+        price: "59000",
+        description:
+          "I dont know wha to write here and write some text randomly",
+        picture:
+          "https://www.rocketmortgage.com/resources-cmsassets/RocketMortgage.com/Article_Images/Large_Images/Stock-Modern-House-With-Large-Pool-AdobeStock-127770833-Copy.jpg",
+        _createdOn: 1614260681375,
+        _id: "5",
+      },
+      6: {
+        _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
+        place: "Haskovo",
+        street: "ul.Badema",
+        m2: "420",
+        year: "2020",
+        bedrom: "6",
+        wc: "4",
+        price: "80000",
+        description:
+          "I dont know wha to write here and write some text randomly",
+        picture:
+          "https://da28rauy2a860.cloudfront.net/completehome/wp-content/uploads/2021/03/03114534/Millbrook-Homes-58series-1.jpg",
+        _createdOn: 1614260681375,
+        _id: "6",
+      },
     },
     records: {
       i01: {
