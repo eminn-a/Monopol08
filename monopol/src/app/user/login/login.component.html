@@ -15,8 +15,10 @@
             <ng-container *ngIf='inputEmail.touched'>
                 <p class="err-msg" *ngIf="inputEmail.errors?.['required']">Email is required!</p>
                 <p class="err-msg" *ngIf="inputEmail.errors?.['emailValidator']">Invalid Email (Must be gmail)</p>
-                <p class="err-msg" *ngIf="inputPassword.errors?.['required']">Password is required!</p>
+            </ng-container>
 
+            <ng-container *ngIf='inputPassword.touched'>
+                <p class="err-msg" *ngIf="inputPassword.errors?.['required']">Password is required!</p>
             </ng-container>
 
             <input type="submit" value="Login" class="button">
