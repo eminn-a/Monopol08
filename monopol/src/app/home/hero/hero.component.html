@@ -1,6 +1,6 @@
 <section class="home container" id="home">
     <div class="home-text">
         <h1>Find Your Next <br>Perfect Place to <br>Live...</h1>
-        <a routerLink="/register" class="btn">Sing Up</a>
+        <a routerLink="/register" class="btn" *ngIf="!isLoggedIn">Sing Up</a>
     </div>
 </section>

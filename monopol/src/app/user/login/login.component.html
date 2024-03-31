@@ -3,15 +3,23 @@
         <h2>Login to Continue</h2>
         <p>Welcome back!</p>
         <!-- login form -->
-        <form #form="ngForm">
+        <form #form="ngForm" (ngSubmit)="login(form)">
             <span>Enter your email adress</span>
-            <input type="email" name="" id="" placeholder="Your@gmail.com" #inputEmail required>
+            <input type="email" name="email" id="email" placeholder="Your@gmail.com" #inputEmail="ngModel" ngModel
+                required [appEmail]="['bg','com']">
             <span>Enter your password</span>
-            <input type="password" name="" id="" placeholder="Password" #inputPassword required>
+            <input type="password" name="password" id="password" placeholder="Password" #inputPassword="ngModel" ngModel
+                required>
+
             <!-- error-msg -->
-            <p class="err-msg">Error msg goes here!</p>
-            <input type="submit" value="Login" class="button"
-                (click)="login($event,inputEmail.value,inputPassword.value)">
+            <ng-container *ngIf='inputEmail.touched'>
+                <p class="err-msg" *ngIf="inputEmail.errors?.['required']">Email is required!</p>
+                <p class="err-msg" *ngIf="inputEmail.errors?.['emailValidator']">Invalid Email (Must be gmail)</p>
+                <p class="err-msg" *ngIf="inputPassword.errors?.['required']">Password is required!</p>
+
+            </ng-container>
+
+            <input type="submit" value="Login" class="button">
             <a href="">Forget Password?</a>
         </form>
         <a routerLink="/register" class="btn">Sign up now</a>
