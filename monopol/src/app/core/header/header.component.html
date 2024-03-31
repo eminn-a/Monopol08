@@ -1,7 +1,7 @@
 <header>
     <div class="nav container">
         <!-- logo -->
-        <a routerLink="/" class="logo"><i class="fa-solid fa-house">asd</i>MONOPOL</a>
+        <a routerLink="/home" class="logo"><i class="fa-solid fa-house">asd</i>MONOPOL</a>
         <!-- menu icon -->
         <!-- nav list -->
         <div class="bars">
@@ -9,10 +9,10 @@
             <label for="menu "><i class="fa-solid fa-bars" id="menu-icon"></i></label>
         </div>
         <ul class="navbar">
-            <li><a routerLink="/">Home</a></li>
+            <li><a routerLink="/home">Home</a></li>
             <li><a routerLink="about">About</a></li>
             <li><a routerLink="catalog">Sales</a></li>
-            <!-- <li><a routerLink="">Add Properties</a></li> -->
+            <li><a routerLink="add-property" *ngIf="isLoggedIn">Add Properties</a></li>
         </ul>
         <!-- login button -->
         <div class="user-navbar">

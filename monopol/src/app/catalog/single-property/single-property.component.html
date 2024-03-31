@@ -1,25 +1,24 @@
 <section class="single-house container" id="single-house">
     <div class="single-house-container">
         <div class="single-house-img">
-            <img src="../../../assets/desktop-wallpaper-4-home-exterior.jpg" alt="">
+            <img src={{property.picture}} alt="">
         </div>
         <div class="single-house-text">
             <div>
-                <h2>Haskovo</h2>
-                <p>Street: <span> ul.Badema, No-12, blok No-11</span></p>
-                <p>Construction Area m²: <span>130</span></p>
-                <p>Construction year: <span>2023</span></p>
-                <p>Bedrom: <span>2</span></p>
-                <p>WCs: <span>1</span></p>
+                <h2>{{property.place}}</h2>
+                <p>Street: <span> {{property.street}}</span></p>
+                <p>Construction Area m²: <span>{{property.m2}}</span></p>
+                <p>Construction year: <span>{{property.year}}</span></p>
+                <p>Bedrom: <span>{{property.bedrom}}</span></p>
+                <p>WCs: <span>{{property.wc}}</span></p>
                 <br>
                 <hr>
-                <p>Price: <span>$95.000,00</span></p>
+                <p>Price: <span>${{property.price}}</span></p>
                 <hr>
             </div>
             <div>
                 <h4>Description</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rem eum est modi praesentium earum
-                    molestias, repudiandae ipsum quod minus!</p>
+                <p>{{property.description}}</p>
             </div>
             <div>
                 <a href="" class="btn">Buy This House</a>

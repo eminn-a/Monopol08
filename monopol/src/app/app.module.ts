@@ -10,6 +10,7 @@ import { UserModule } from './user/user.module';
 import { HomeModule } from './home/home.module';
 import { CatalogModule } from './catalog/catalog.module';
 import { ErrorComponent } from './error/error.component';
+import { PropertiesModule } from './properties/properties.module';
 
 @NgModule({
   declarations: [AppComponent, ErrorComponent],
@@ -21,6 +22,7 @@ import { ErrorComponent } from './error/error.component';
     UserModule,
     CatalogModule,
     SharedModule,
+    PropertiesModule,
     AppRoutingModule,
   ],
   providers: [],

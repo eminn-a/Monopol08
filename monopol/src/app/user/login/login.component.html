@@ -3,11 +3,13 @@
         <h2>Login to Continue</h2>
         <p>Welcome back!</p>
         <!-- login form -->
-        <form>
+        <form #form="ngForm">
             <span>Enter your email adress</span>
             <input type="email" name="" id="" placeholder="Your@gmail.com" #inputEmail required>
             <span>Enter your password</span>
             <input type="password" name="" id="" placeholder="Password" #inputPassword required>
+            <!-- error-msg -->
+            <p class="err-msg">Error msg goes here!</p>
             <input type="submit" value="Login" class="button"
                 (click)="login($event,inputEmail.value,inputPassword.value)">
             <a href="">Forget Password?</a>
