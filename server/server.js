@@ -1545,47 +1545,47 @@
     houses: {
       "0a272c58-b7ea-4e09-a000-7ec988248f66": {
         _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-        place: "Haskovo",
-        street: "ul.Badema",
-        m2: "160",
+        place: "Plovdiv",
+        street: "District Ostromila",
+        m2: "110",
         year: "2020",
         bedrom: "2",
         wc: "1",
         price: "20000",
         description:
-          "I dont know wha to write here and write some text randomly",
+          "It is with great pleasure that we present for sale modern and functional apartments in a new residential complex, located in the southern part of the city of Plovdiv, in the district Ostromila.",
         picture:
-          "https://img.onmanorama.com/content/dam/mm/en/lifestyle/decor/images/2023/6/1/house-middleclass.jpg",
+          "https://www.powerconstruction.net/sites/default/files/styles/extra_large/public/images/the-main-exterior-dusk-corner-of-building-6.26.2017.jpg?itok=CdqTwe2I",
         _createdOn: 1614260681375,
         _id: "0a272c58-b7ea-4e09-a000-7ec988248f66",
       },
       2: {
         _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-        place: "Sofia",
-        street: "ul.Vitosha",
-        m2: "90",
+        place: "Rhodopes",
+        street: "VILLAGE BELASHTITSA",
+        m2: "215",
         year: "2020",
         bedrom: "2",
         wc: "1",
         price: "30000",
         description:
-          "I dont know wha to write here and write some text randomly",
+          "We present a new complex of 10 modern single-family houses in the village of Belashtitsa. An exquisite combination of beauty, comfort, location and gorgeous views with privacy and tranquility.",
         picture:
-          "https://img.onmanorama.com/content/dam/mm/en/lifestyle/decor/images/2023/6/1/house-middleclass.jpg",
+          "https://static.luximmo.org/property-images/big/1704788855T3_2.jpg",
         _createdOn: 1614260681375,
         _id: "2",
       },
       3: {
         _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
         place: "Plovdiv",
-        street: "ul.Kuchuk Parish",
+        street: "Village Markovo",
         m2: "120",
         year: "2020",
         bedrom: "2",
         wc: "1",
         price: "40000",
         description:
-          "I dont know wha to write here and write some text randomly",
+          "We present you a gated complex consisting of single-family houses located among the greenery of the southeastern mountain slope, surrounded by a breathtaking natural panorama.",
         picture:
           "https://img.onmanorama.com/content/dam/mm/en/lifestyle/decor/images/2023/6/1/house-middleclass.jpg",
         _createdOn: 1614260681375,
@@ -1595,13 +1595,13 @@
         _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
         place: "Varna",
         street: "ul.Varna nqkade",
-        m2: "120",
-        year: "2020",
+        m2: "173",
+        year: "2015",
         bedrom: "3",
         wc: "2",
         price: "45000",
         description:
-          "I dont know wha to write here and write some text randomly",
+          "We offer you this house with a total area of 173 m2. It was constructed in 2015. The property has air-conditioners. A standard air-conditioner - also available. Aluminium window frames, external insulation and laminate flooring are available in the property. ",
         picture:
           "https://www.mydomaine.com/thmb/bepet4VMGUG70sCLFNQRdZm9bbg=/2048x0/filters:no_upscale():strip_icc()/SuCasaDesign-Modern-9335be77ca0446c7883c5cf8d974e47c.jpg",
         _createdOn: 1614260681375,
@@ -1609,15 +1609,15 @@
       },
       5: {
         _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-        place: "Haskovo",
-        street: "s.Karamanci",
+        place: "Plovdiv",
+        street: "Village Markovo",
         m2: "220",
         year: "2021",
         bedrom: "4",
         wc: "3",
         price: "59000",
         description:
-          "I dont know wha to write here and write some text randomly",
+          "It is with great pleasure that we present a closed residential complex of houses only 5 km from Plovdiv. A place where unique nature and urbanism intertwine. Are you dreaming of luxury, peace, and clean air? You've come to the right place.",
         picture:
           "https://www.rocketmortgage.com/resources-cmsassets/RocketMortgage.com/Article_Images/Large_Images/Stock-Modern-House-With-Large-Pool-AdobeStock-127770833-Copy.jpg",
         _createdOn: 1614260681375,
@@ -1626,14 +1626,14 @@
       6: {
         _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
         place: "Haskovo",
-        street: "ul.Badema",
+        street: "Village Karamantsi",
         m2: "420",
         year: "2020",
         bedrom: "6",
         wc: "4",
         price: "80000",
         description:
-          "I dont know wha to write here and write some text randomly",
+          "It is with great pleasure that we present a closed residential complex of houses only 5 km from Haskovo",
         picture:
           "https://da28rauy2a860.cloudfront.net/completehome/wp-content/uploads/2021/03/03114534/Millbrook-Homes-58series-1.jpg",
         _createdOn: 1614260681375,
