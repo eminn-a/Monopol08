@@ -10,16 +10,20 @@ import { EMAIL_DOMAINS } from 'src/app/constants';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
+  allFieldsError: boolean = false;
   domains = EMAIL_DOMAINS;
-  errormsg = false;
+
   constructor(private userService: UserService, private router: Router) {}
 
   login(form: NgForm) {
-    console.log(form.value);
     if (form.invalid) {
-      this.errormsg = true;
+      this.allFieldsError = true;
+      setTimeout(() => {
+        this.allFieldsError = false;
+      }, 2000);
       return;
     }
+    console.log(form.value);
     this.userService.login();
     this.router.navigate(['/home']);
   }

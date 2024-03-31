@@ -13,7 +13,6 @@ export class AllPropertiesComponent {
   constructor(private api: ApiService) {}
   ngOnInit(): void {
     this.api.getProperties().subscribe((allProperties) => {
-      console.log(allProperties);
       this.allProperties = allProperties;
     });
   }

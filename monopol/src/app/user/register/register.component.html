@@ -16,17 +16,20 @@
                     formControlName="rePassword" required>
 
                 <!-- error-msg -->
+                <ng-container *ngIf=" form.get('email')?.touched">
+                    <p class="err-msg" *ngIf="form.get('email')?.errors?.['required']">Email is required!</p>
+                    <p class="err-msg" *ngIf="form.get('email')?.errors?.['emailValidator']">Email is not valid(gmail)
+                    </p>
+                </ng-container>
 
 
                 <ng-container *ngIf="form.get('passGroup')?.get('rePassword')?.touched">
                     <p class="err-msg" *ngIf="form.get('passGroup')?.errors?.['matchPasswordsValidator']">Password does
                         not match</p>
                 </ng-container>
-            </ng-container>
-            <ng-container *ngIf=" form.get('email')?.touched">
-                <p class="err-msg" *ngIf="form.get('email')?.errors?.['required']">Email is required!</p>
-                <p class="err-msg" *ngIf="form.get('email')?.errors?.['emailValidator']">Email is not valid(gmail)
-                </p>
+
+                <p class="err-msg" *ngIf="allFieldsError">All fields are required!</p>
+
             </ng-container>
             <input type="submit" value="Register" class="button">
             <a routerLink="/login">Already have account?</a>
