@@ -38,7 +38,7 @@ Before you begin, ensure you have the following prerequisites:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/eminn-a/Monopo08
+   git clone https://github.com/eminn-a/Monopol08
    ```
 
 2. Navigate to the project directory:
