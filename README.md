@@ -2,7 +2,7 @@
 
 Angular Project
 
-Hosting URL: https://techstorm-c66e0.web.app
+Hosting URL:
 
 <img src="/monopol/src/assets/monopol.png" alt="Project Logo" width="700" height="1200">
 
