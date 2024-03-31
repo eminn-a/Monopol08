@@ -8,7 +8,7 @@ Hosting URL: https://techstorm-c66e0.web.app
 
 ## Overview
 
-Welcome to the Monopol SoftUni project!
+Welcome to the Monopol SoftUni project! <br/>
 Monopol is fully responsive Real estate website,
 Responsive for all devices, built using HTML, CSS, and Angular.
 
