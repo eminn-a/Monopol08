@@ -6,7 +6,7 @@
         <form #form="ngForm" (ngSubmit)="login(form)">
             <span>Enter your email adress</span>
             <input type="email" name="email" id="email" placeholder="Your@gmail.com" #inputEmail="ngModel" ngModel
-                required [appEmail]="['bg','com']">
+                required [appEmail]="domains">
             <span>Enter your password</span>
             <input type="password" name="password" id="password" placeholder="Password" #inputPassword="ngModel" ngModel
                 required>
@@ -20,6 +20,8 @@
             <ng-container *ngIf='inputPassword.touched'>
                 <p class="err-msg" *ngIf="inputPassword.errors?.['required']">Password is required!</p>
             </ng-container>
+
+            <!-- <p class="err-msg" *ngIf="errormsg">Fiels are required</p> -->
 
             <input type="submit" value="Login" class="button">
             <a href="">Forget Password?</a>

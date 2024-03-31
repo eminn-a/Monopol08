@@ -2,15 +2,32 @@
     <div class="register-container">
         <h2>Welcome,<br> Let's get started</h2>
         <!-- register form -->
-        <form action="">
+        <form [formGroup]="form" (ngSubmit)="register()">
             <span>Enter your email adress</span>
-            <input type="email" name="" id="" placeholder="Your@gmail.com" required>
-            <span>Enter your password</span>
-            <input type="password" name="" id="" placeholder="Password" required>
-            <span>Repeat your password</span>
-            <input type="rePassword" name="" id="" placeholder="Password" required>
-            <!-- error-msg -->
-            <p class="err-msg">Error goes here!</p>
+            <input type="email" name="" id="" placeholder="Your@gmail.com" formControlName="email" required>
+
+            <ng-container formGroupName="passGroup">
+                <span>Enter your password</span>
+                <input type="password" name="password" id="password" placeholder="Password" formControlName="password"
+                    required>
+
+                <span>Repeat your password</span>
+                <input type="password" name="rePassword" id="rePassword" placeholder="Password"
+                    formControlName="rePassword" required>
+
+                <!-- error-msg -->
+
+
+                <ng-container *ngIf="form.get('passGroup')?.get('rePassword')?.touched">
+                    <p class="err-msg" *ngIf="form.get('passGroup')?.errors?.['matchPasswordsValidator']">Password does
+                        not match</p>
+                </ng-container>
+            </ng-container>
+            <ng-container *ngIf=" form.get('email')?.touched">
+                <p class="err-msg" *ngIf="form.get('email')?.errors?.['required']">Email is required!</p>
+                <p class="err-msg" *ngIf="form.get('email')?.errors?.['emailValidator']">Email is not valid(gmail)
+                </p>
+            </ng-container>
             <input type="submit" value="Register" class="button">
             <a routerLink="/login">Already have account?</a>
         </form>
