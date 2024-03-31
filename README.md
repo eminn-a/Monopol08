@@ -8,7 +8,9 @@ Hosting URL: https://techstorm-c66e0.web.app
 
 ## Overview
 
-Welcome to the StormTech SoftUni project! This project aims to provide a robust and scalable e-commerce solution leveraging cutting-edge technologies. Whether you are a developer, business owner, or contributor, this README.md file will guide you through the setup, features, and contribution process.
+Welcome to the Monopol SoftUni project!
+Monopol is fully responsive Real estate website,
+Responsive for all devices, built using HTML, CSS, and Angular.
 
 ## Table of Contents
 
