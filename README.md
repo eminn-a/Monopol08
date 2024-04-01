@@ -9,7 +9,7 @@ Hosting URL:
 ## Overview
 
 Welcome to the Monopol SoftUni project! <br/>
-Monopol is fully responsive Real estate website,
+Monopol is fully responsive Real estate website,<br/>
 Responsive for all devices, built using HTML, CSS, and Angular.
 
 ## Table of Contents
