@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 import { ErrorComponent } from './error/error.component';
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent, ErrorComponent],
+  declarations: [HeaderComponent, FooterComponent],
   imports: [CommonModule, RouterModule],
   exports: [HeaderComponent, FooterComponent],
 })

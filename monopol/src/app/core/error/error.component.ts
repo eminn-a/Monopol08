@@ -7,7 +7,8 @@ import { ErrorService } from './error.service';
   styleUrls: ['./error.component.css'],
 })
 export class ErrorComponent implements OnInit {
-  errorMsg = '';
+  errorMsg = null;
+  gotError = false;
 
   constructor(private errorService: ErrorService) {}
 
@@ -15,6 +16,11 @@ export class ErrorComponent implements OnInit {
     this.errorService.apiError$.subscribe((err: any) => {
       console.log(err);
       this.errorMsg = err?.message || null;
+      this.gotError = true;
+      setTimeout(() => {
+        this.gotError = false;
+        this.errorMsg = undefined || null;
+      }, 3000);
     });
   }
 }

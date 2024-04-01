@@ -1,5 +1,1 @@
-<section>
-    <div class="error-notification">
-        <p class="notification error-message">Oops ... {{errorMsg}}</p>
-    </div>
-</section>
+<p class="notification error-message" *ngIf="gotError">{{errorMsg}}</p>

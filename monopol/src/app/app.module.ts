@@ -12,9 +12,15 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { PropertiesModule } from './properties/properties.module';
 import { appInterceptorPrivoder } from './app.interceptor';
 import { AuthenticateComponent } from './authenticate/authenticate.component';
+import { ErrorComponent } from './core/error/error.component';
 
 @NgModule({
-  declarations: [AppComponent, NotFoundComponent, AuthenticateComponent],
+  declarations: [
+    AppComponent,
+    NotFoundComponent,
+    AuthenticateComponent,
+    ErrorComponent,
+  ],
   imports: [
     BrowserModule,
     HttpClientModule,

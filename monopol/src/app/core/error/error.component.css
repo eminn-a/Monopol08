@@ -1,8 +1,8 @@
 .notification {
-    /* position: fixed;
+    position: fixed;
     z-index: 10;
-    right: 50%;
-    top: 20%; */
+    right: 5%;
+    top: 20%;
     padding: 0.5rem;
     border-radius: 0.5rem;
     color: rgb(255, 255, 255);
@@ -20,9 +20,10 @@
     background-color: rgba(99, 230, 81, 0.699);
 }
 
+/* 
 .error-notification {
-    height: 50vh;
+    height: 65vh;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */

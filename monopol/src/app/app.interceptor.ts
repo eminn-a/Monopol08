@@ -39,11 +39,11 @@ class AppInterceptor implements HttpInterceptor {
 
     return next.handle(req).pipe(
       catchError((err) => {
-        this.errorService.setError(err);
         if (err.status === 401) {
           //
         } else {
-          this.router.navigate(['/error']);
+          // this.router.navigate(['/error']);
+          this.errorService.setError(err);
         }
         return throwError(() => err);
       })
