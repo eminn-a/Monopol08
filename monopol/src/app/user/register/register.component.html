@@ -18,7 +18,7 @@
                 <!-- error-msg -->
                 <ng-container *ngIf=" form.get('email')?.touched">
                     <p class="err-msg" *ngIf="form.get('email')?.errors?.['required']">Email is required!</p>
-                    <p class="err-msg" *ngIf="form.get('email')?.errors?.['emailValidator']">Email is not valid(gmail)
+                    <p class="err-msg" *ngIf="form.get('email')?.errors?.['emailValidator']">Invalid Email (gmail/abv)
                     </p>
                 </ng-container>
 

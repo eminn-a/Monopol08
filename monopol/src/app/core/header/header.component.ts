@@ -14,6 +14,10 @@ export class HeaderComponent {
     return this.userService.isLogged;
   }
 
+  get isAdmin(): boolean {
+    return this.userService.isAdmin;
+  }
+
   get email(): string {
     return this.userService.user?.email || '';
   }

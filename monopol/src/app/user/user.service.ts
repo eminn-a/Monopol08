@@ -20,6 +20,14 @@ export class UserService implements OnDestroy {
     return !!this.user;
   }
 
+  get isAdmin(): boolean {
+    const currentEmail = localStorage.getItem('email');
+    if (currentEmail === 'admin@abv.bg') {
+      return true;
+    }
+    return false;
+  }
+
   constructor(private http: HttpClient) {
     this.userSubscription = this.user$.subscribe((user) => {
       this.user = user;

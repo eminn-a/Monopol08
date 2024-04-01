@@ -17,7 +17,7 @@ export class RegisterComponent {
   // emailValidator(EMAIL_DOMAINS)
 
   form = this.fb.group({
-    email: ['', [Validators.required]],
+    email: ['', [Validators.required, emailValidator(EMAIL_DOMAINS)]],
     passGroup: this.fb.group(
       {
         password: ['', [Validators.required]],

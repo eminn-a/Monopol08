@@ -5,9 +5,10 @@
         <!-- login form -->
         <form #form="ngForm" (ngSubmit)="login(form)">
             <span>Enter your email adress</span>
-            <input type="email" name="email" id="email" placeholder="Your@gmail.com" #inputEmail="ngModel" ngModel>
+            <input type="email" name="email" id="email" placeholder="Your@gmail.com" #inputEmail="ngModel" ngModel
+                required [appEmail]="domains">
 
-            <!-- required [appEmail]="domains" -->
+
 
             <span>Enter your password</span>
             <input type="password" name="password" id="password" placeholder="Password" #inputPassword="ngModel" ngModel
@@ -16,7 +17,7 @@
             <!-- error-msg -->
             <ng-container *ngIf='inputEmail.touched'>
                 <p class="err-msg" *ngIf="inputEmail.errors?.['required']">Email is required!</p>
-                <p class="err-msg" *ngIf="inputEmail.errors?.['emailValidator']">Invalid Email (Must be gmail)</p>
+                <p class="err-msg" *ngIf="inputEmail.errors?.['emailValidator']">Invalid Email (gmail/abv)</p>
             </ng-container>
 
             <ng-container *ngIf='inputPassword.touched'>
