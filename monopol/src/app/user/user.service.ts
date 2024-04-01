@@ -1,36 +1,88 @@
-import { Injectable } from '@angular/core';
-import { UserForAuth } from '../types/user';
+import { Injectable, OnDestroy } from '@angular/core';
+import { User } from '../types/user';
+import { HttpClient } from '@angular/common/http';
+import { BehaviorSubject, Subscription, tap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
-export class UserService {
-  user: UserForAuth | undefined;
+export class UserService implements OnDestroy {
+  private user$$ = new BehaviorSubject<User | undefined>(undefined);
+  public user$ = this.user$$.asObservable();
+
+  user: User | undefined;
   USER_KEY = '[user]';
+
+  userSubscription: Subscription;
 
   get isLogged(): boolean {
     return !!this.user;
   }
 
-  constructor() {
-    try {
-      const lsUser = localStorage.getItem(this.USER_KEY) || '';
-      this.user = JSON.parse(lsUser);
-    } catch (error) {
-      this.user = undefined;
-    }
+  constructor(private http: HttpClient) {
+    this.userSubscription = this.user$.subscribe((user) => {
+      this.user = user;
+    });
   }
 
-  login() {
-    this.user = {
-      firstName: 'Emin',
-      email: 'emin@gmail.com',
-      password: '12341234',
-    };
-    localStorage.setItem(this.USER_KEY, JSON.stringify(this.user));
+  // http://localhost:3030/users/
+
+  login(email: string, password: string) {
+    return this.http
+      .post<User>('http://localhost:3030/users/login', { email, password })
+      .pipe(
+        tap((response) => {
+          localStorage.setItem('username', response.username);
+          localStorage.setItem('email', response.email);
+          localStorage.setItem('userId', response._id);
+          localStorage.setItem('accessToken', response.accessToken);
+
+          this.user$$.next({
+            email: response.email,
+            username: response.username,
+            _id: response._id,
+            accessToken: response.accessToken,
+          });
+
+          console.log('login response', response);
+        })
+      );
   }
+
+  regisetr(email: string, password: string) {
+    return this.http
+      .post<User>('http://localhost:3030/users/register', {
+        email,
+        password,
+      })
+      .pipe(
+        tap((response) => {
+          localStorage.setItem('username', response.username);
+          localStorage.setItem('email', response.email);
+          localStorage.setItem('userId', response._id);
+          localStorage.setItem('accessToken', response.accessToken);
+
+          this.user$$.next({
+            email: response.email,
+            username: response.username,
+            _id: response._id,
+            accessToken: response.accessToken,
+          });
+          console.log('response', response);
+        })
+      );
+  }
+
   logout() {
-    this.user = undefined;
-    localStorage.removeItem(this.USER_KEY);
+    return this.http.post<User>('http://localhost:3030/users/logout', {}).pipe(
+      tap((response) => {
+        localStorage.clear();
+        this.user$$.next(undefined);
+      })
+    );
+  }
+
+  ngOnDestroy(): void {
+    this.userSubscription.unsubscribe();
   }
 }

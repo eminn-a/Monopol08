@@ -18,8 +18,11 @@ export class HeaderComponent {
     return this.userService.user?.email || '';
   }
 
-  logou() {
-    this.userService.logout();
-    this.router.navigate(['/home']);
+  logout() {
+    this.userService.logout().subscribe({
+      next: () => {
+        this.router.navigate(['/home']);
+      },
+    });
   }
 }

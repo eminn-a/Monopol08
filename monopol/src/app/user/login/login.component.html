@@ -5,8 +5,10 @@
         <!-- login form -->
         <form #form="ngForm" (ngSubmit)="login(form)">
             <span>Enter your email adress</span>
-            <input type="email" name="email" id="email" placeholder="Your@gmail.com" #inputEmail="ngModel" ngModel
-                required [appEmail]="domains">
+            <input type="email" name="email" id="email" placeholder="Your@gmail.com" #inputEmail="ngModel" ngModel>
+
+            <!-- required [appEmail]="domains" -->
+
             <span>Enter your password</span>
             <input type="password" name="password" id="password" placeholder="Password" #inputPassword="ngModel" ngModel
                 required>

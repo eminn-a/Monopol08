@@ -11,6 +11,7 @@ import { HomeModule } from './home/home.module';
 import { CatalogModule } from './catalog/catalog.module';
 import { ErrorComponent } from './error/error.component';
 import { PropertiesModule } from './properties/properties.module';
+import { appInterceptorPrivoder } from './app.interceptor';
 
 @NgModule({
   declarations: [AppComponent, ErrorComponent],
@@ -25,7 +26,7 @@ import { PropertiesModule } from './properties/properties.module';
     PropertiesModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [appInterceptorPrivoder],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -35,9 +35,13 @@
             <input type="number" name="price" id="price" placeholder="Price" #inputPrice="ngModel" ngModel required
                 min="1">
 
+
+            <ng-container *ngIf="inputPicture?.errors?.['minlength']">
+                <p class="err-msg">Minimum lenght 10 characters</p>
+            </ng-container>
             <span>Property Picture</span>
             <input type="text" name="picture" id="picture" placeholder="Picture" #inputPicture="ngModel" ngModel
-                required>
+                required minlength="10">
 
 
             <ng-container *ngIf="inputDescription?.errors?.['minlength']">

@@ -1,5 +1,7 @@
-export interface UserForAuth {
-  firstName: string;
+export interface User {
+  username: string;
   email: string;
-  password: string;
+  _id: string;
+  password?: string;
+  accessToken: string;
 }
