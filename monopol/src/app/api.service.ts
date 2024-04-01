@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment.development';
 import { Property } from './types/property';
+import { User } from './types/user';
 
 @Injectable({
   providedIn: 'root',
@@ -11,12 +12,12 @@ export class ApiService {
 
   getProperties() {
     const { apiUrl } = environment;
-    return this.http.get<Property[]>(`${apiUrl}/houses`);
+    return this.http.get<Property[]>(`${apiUrl}/data/houses`);
   }
 
   getRecentProperties(limit?: number) {
     const { apiUrl } = environment;
-    let url = `${apiUrl}/houses`;
+    let url = `${apiUrl}/data/houses`;
     if (limit) {
       url += `?sortBy=_createdOn%20des&pageSize=${limit}`;
     }
@@ -25,7 +26,7 @@ export class ApiService {
 
   getProperty(id: string) {
     const { apiUrl } = environment;
-    return this.http.get<Property>(`${apiUrl}/houses/${id}`);
+    return this.http.get<Property>(`${apiUrl}/data/houses/${id}`);
   }
 
   createProperty(

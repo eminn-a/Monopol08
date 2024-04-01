@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
@@ -12,9 +11,10 @@ import { CatalogModule } from './catalog/catalog.module';
 import { ErrorComponent } from './error/error.component';
 import { PropertiesModule } from './properties/properties.module';
 import { appInterceptorPrivoder } from './app.interceptor';
+import { AuthenticateComponent } from './authenticate/authenticate.component';
 
 @NgModule({
-  declarations: [AppComponent, ErrorComponent],
+  declarations: [AppComponent, ErrorComponent, AuthenticateComponent],
   imports: [
     BrowserModule,
     HttpClientModule,

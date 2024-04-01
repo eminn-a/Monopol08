@@ -2,6 +2,7 @@ import { Injectable, OnDestroy } from '@angular/core';
 import { User } from '../types/user';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Subscription, tap } from 'rxjs';
+import { environment } from 'src/environments/environment.development';
 
 @Injectable({
   providedIn: 'root',
@@ -29,7 +30,7 @@ export class UserService implements OnDestroy {
 
   login(email: string, password: string) {
     return this.http
-      .post<User>('http://localhost:3030/users/login', { email, password })
+      .post<User>(`${environment.apiUrl}/users/login`, { email, password })
       .pipe(
         tap((response) => {
           localStorage.setItem('username', response.username);
@@ -51,7 +52,7 @@ export class UserService implements OnDestroy {
 
   regisetr(email: string, password: string) {
     return this.http
-      .post<User>('http://localhost:3030/users/register', {
+      .post<User>(`${environment.apiUrl}/users/register`, {
         email,
         password,
       })
@@ -74,12 +75,18 @@ export class UserService implements OnDestroy {
   }
 
   logout() {
-    return this.http.post<User>('http://localhost:3030/users/logout', {}).pipe(
+    return this.http.post<User>(`${environment.apiUrl}/users/logout`, {}).pipe(
       tap((response) => {
         localStorage.clear();
         this.user$$.next(undefined);
       })
     );
+  }
+
+  getProfile() {
+    return this.http
+      .get<User>(`${environment.apiUrl}/users/me`)
+      .pipe(tap((user) => this.user$$.next(user)));
   }
 
   ngOnDestroy(): void {

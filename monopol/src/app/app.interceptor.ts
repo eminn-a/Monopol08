@@ -14,26 +14,27 @@ const userUrl = environment.userUrl;
 
 @Injectable()
 class AppInterceptor implements HttpInterceptor {
-  DATA = '/data';
-  USER = '/users';
-
   intercept(
     req: HttpRequest<any>,
     next: HttpHandler
   ): Observable<HttpEvent<any>> {
     console.log(req);
 
-    if (req.url.startsWith(this.DATA)) {
+    const accessToken = localStorage.getItem('accessToken');
+
+    if (req.url.startsWith('http://localhost:3030') && accessToken) {
       req = req.clone({
-        url: req.url.replace(this.DATA, dataUrl),
-        withCredentials: true,
+        setHeaders: {
+          'X-Authorization': accessToken,
+        },
       });
     }
 
-    if (req.url.startsWith(this.USER)) {
+    if (!req.headers.has('Content-Type')) {
       req = req.clone({
-        url: req.url.replace(this.USER, userUrl),
-        withCredentials: true,
+        setHeaders: {
+          'Content-Type': 'application/json',
+        },
       });
     }
 
