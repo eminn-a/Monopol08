@@ -53,12 +53,6 @@ Before you begin, ensure you have the following prerequisites:
    npm install
    ```
 
-4. Run project:
-
-   ```bash
-   ng serve
-   ```
-
 ## Features
 
 - **User Authentication**: Secure user authentication and authorization.
@@ -82,7 +76,7 @@ Before you begin, ensure you have the following prerequisites:
    2.1
 
    ```bash
-   node server.js
+   npm install & node server.js
 
    ```
 
