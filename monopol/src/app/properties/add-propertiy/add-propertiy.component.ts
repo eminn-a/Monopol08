@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 import { ApiService } from 'src/app/api.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { ApiService } from 'src/app/api.service';
 export class AddPropertiyComponent {
   allFieldsError: boolean = false;
 
-  constructor(private apiService: ApiService) {}
+  constructor(private apiService: ApiService, private router: Router) {}
   addProperty(form: NgForm) {
     if (form.invalid) {
       this.allFieldsError = true;
@@ -20,5 +21,8 @@ export class AddPropertiyComponent {
       return;
     }
     console.log(form.value);
+    this.apiService.createProperty(form.value).subscribe((data) => {
+      this.router.navigate(['/catalog']);
+    });
   }
 }

@@ -14,6 +14,7 @@ export class ApiService {
     const { apiUrl } = environment;
     return this.http.get<Property[]>(`${apiUrl}/data/houses`);
   }
+  // ?sortBy=_createdOn%20desc&distinct=category
 
   getRecentProperties(limit?: number) {
     const { apiUrl } = environment;
@@ -29,27 +30,8 @@ export class ApiService {
     return this.http.get<Property>(`${apiUrl}/data/houses/${id}`);
   }
 
-  createProperty(
-    place: string,
-    street: string,
-    m2: string,
-    year: string,
-    bedrom: string,
-    wc: string,
-    price: string,
-    description: string,
-    picture: string
-  ) {
-    return this.http.post<Property>('/', {
-      place,
-      street,
-      m2,
-      year,
-      bedrom,
-      wc,
-      price,
-      description,
-      picture,
-    });
+  createProperty(product: Property) {
+    const { apiUrl } = environment;
+    return this.http.post<Property>(`${apiUrl}/data/houses`, product);
   }
 }

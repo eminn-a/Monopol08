@@ -8,13 +8,13 @@ import { SharedModule } from './shared/shared.module';
 import { UserModule } from './user/user.module';
 import { HomeModule } from './home/home.module';
 import { CatalogModule } from './catalog/catalog.module';
-import { ErrorComponent } from './error/error.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 import { PropertiesModule } from './properties/properties.module';
 import { appInterceptorPrivoder } from './app.interceptor';
 import { AuthenticateComponent } from './authenticate/authenticate.component';
 
 @NgModule({
-  declarations: [AppComponent, ErrorComponent, AuthenticateComponent],
+  declarations: [AppComponent, NotFoundComponent, AuthenticateComponent],
   imports: [
     BrowserModule,
     HttpClientModule,

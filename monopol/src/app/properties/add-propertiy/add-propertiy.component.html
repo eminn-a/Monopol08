@@ -7,7 +7,7 @@
             <ng-container *ngIf="inputTown?.errors?.['minlength']">
                 <p class="err-msg">Minimum lenght 4 characters</p>
             </ng-container>
-            <input type="text" name="town" id="town" placeholder="Town" ngModel #inputTown="ngModel" required
+            <input type="text" name="place" id="place" placeholder="Town" ngModel #inputTown="ngModel" required
                 minlength="4">
 
             <ng-container *ngIf="inputStreet?.errors?.['minlength']">
@@ -25,11 +25,11 @@
                 min="1980">
 
             <span>Property Bedrooms</span>
-            <input type="number" name="bedrooms" id="bedrooms" placeholder="Bedrooms" #inputBedrooms="ngModel" ngModel
+            <input type="number" name="bedrom" id="bedrom" placeholder="Bedroom" #inputBedrooms="ngModel" ngModel
                 required min="1">
 
             <span>Property Bath</span>
-            <input type="number" name="bath" id="bath" placeholder="Bath" #inputBath="ngModel" ngModel required min="0">
+            <input type="number" name="wc" id="wc" placeholder="Bath" #inputBath="ngModel" ngModel required min="0">
 
             <span>Property Price</span>
             <input type="number" name="price" id="price" placeholder="Price" #inputPrice="ngModel" ngModel required
