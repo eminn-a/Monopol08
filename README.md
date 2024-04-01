@@ -88,7 +88,8 @@ Before you begin, ensure you have the following prerequisites:
 
 ## Contributing
 
-We welcome contributions! To contribute to this project, follow these steps:
+Feel free to explore and provide feedback. I'm always eager to learn and improve!!
+To contribute to this project, follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix: `git checkout -b feature-name`.
