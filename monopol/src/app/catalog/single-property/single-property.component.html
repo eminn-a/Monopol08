@@ -23,10 +23,10 @@
             <div>
                 <a href="" class="btn">Buy This House</a>
             </div>
-            <!-- <div>
-                <a href="" class="btn-red">Delete</a>
-                <a href="" class="btn-green">Edit</a>
-            </div> -->
+            <div>
+                <a class="btn-red">Delete</a>
+                <a [routerLink]=" ['/edit/', property._id]" class="btn-green">Edit</a>
+            </div>
         </div>
     </div>
 

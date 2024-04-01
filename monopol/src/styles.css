@@ -56,6 +56,7 @@ section {
     background-color: #DC143C;
     color: var(--bg-color);
     border-radius: 5rem;
+    cursor: pointer;
 }
 
 .btn-green {
