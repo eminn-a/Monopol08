@@ -82,9 +82,9 @@ Before you begin, ensure you have the following prerequisites:
 
 3. You can check server info here [Server Info](https://github.com/softuni-practice-server/softuni-practice-server).
 
-4. Access the application in your web browser at [http://localhost:5173/](http://localhost:5173/).
+4. Access the application in your web browser at [http://localhost:4200/](http://localhost:4200/).
 
-5. Explore the various features and functionalities of TechStrom project.
+5. Explore the various features and functionalities of Monopol project.
 
 ## Contributing
 
