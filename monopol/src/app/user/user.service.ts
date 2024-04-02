@@ -17,7 +17,8 @@ export class UserService implements OnDestroy {
   userSubscription: Subscription;
 
   get isLogged(): boolean {
-    return !!this.user;
+    const loggedUser = localStorage.getItem('email');
+    return !!loggedUser;
   }
 
   get isAdmin(): boolean {

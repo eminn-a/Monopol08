@@ -46,5 +46,6 @@
     text-align: center;
     font-weight: 100;
     font-size: 14px;
-    padding-top: 1em;
+    margin-top: 1em;
+    position: relative;
 }
