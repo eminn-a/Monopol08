@@ -4,7 +4,7 @@
         <!-- register form -->
         <form [formGroup]="form" (ngSubmit)="register()">
             <span>Enter your email adress</span>
-            <input type="email" name="" id="" placeholder="Your@gmail.com" formControlName="email" required>
+            <input type="email" name="email" id="email" placeholder="Your@gmail.com" formControlName="email" required>
 
             <ng-container formGroupName="passGroup">
                 <span>Enter your password</span>
@@ -26,6 +26,12 @@
                 <ng-container *ngIf="form.get('passGroup')?.get('rePassword')?.touched">
                     <p class="err-msg" *ngIf="form.get('passGroup')?.errors?.['matchPasswordsValidator']">Password does
                         not match</p>
+                </ng-container>
+
+
+                <ng-container *ngIf="form.get('passGroup')?.get('password')?.touched">
+                    <p class="err-msg" *ngIf="form.get('passGroup')?.get('password')?.errors?.['minlength']">Password
+                        must be 4 characters</p>
                 </ng-container>
 
                 <p class="err-msg" *ngIf="allFieldsError">All fields are required!</p>

@@ -20,7 +20,7 @@ export class RegisterComponent {
     email: ['', [Validators.required, emailValidator(EMAIL_DOMAINS)]],
     passGroup: this.fb.group(
       {
-        password: ['', [Validators.required]],
+        password: ['', [Validators.required, Validators.minLength(4)]],
         rePassword: ['', [Validators.required]],
       },
       { validators: [matchPasswordsValidator('password', 'rePassword')] }
@@ -35,6 +35,7 @@ export class RegisterComponent {
 
   register(): void {
     if (this.form.invalid) {
+      console.log(this.form);
       this.allFieldsError = true;
       setTimeout(() => {
         this.allFieldsError = false;
