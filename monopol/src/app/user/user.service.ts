@@ -8,6 +8,9 @@ import { environment } from 'src/environments/environment.development';
   providedIn: 'root',
 })
 export class UserService implements OnDestroy {
+  getCurrentUser() {
+    throw new Error('Method not implemented.');
+  }
   private user$$ = new BehaviorSubject<User | undefined>(undefined);
   public user$ = this.user$$.asObservable();
 
@@ -17,8 +20,12 @@ export class UserService implements OnDestroy {
   userSubscription: Subscription;
 
   get isLogged(): boolean {
-    const loggedUser = localStorage.getItem('email');
-    return !!loggedUser;
+    const currentUser = localStorage.getItem('email');
+    if (currentUser) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
   get isAdmin(): boolean {

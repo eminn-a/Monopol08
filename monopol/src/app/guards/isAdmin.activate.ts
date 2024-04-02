@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {
   ActivatedRouteSnapshot,
   CanActivate,
+  Router,
   RouterStateSnapshot,
   UrlTree,
 } from '@angular/router';
@@ -10,7 +11,7 @@ import { UserService } from '../user/user.service';
 
 @Injectable({ providedIn: 'root' })
 export class AdminActivate implements CanActivate {
-  constructor(private userService: UserService) {}
+  constructor(private userService: UserService, private router: Router) {}
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
@@ -19,8 +20,10 @@ export class AdminActivate implements CanActivate {
     | UrlTree
     | Observable<boolean | UrlTree>
     | Promise<boolean | UrlTree> {
-    const currentUser = localStorage.getItem('email');
-    const isAdmin = currentUser === 'admin@abv.bg';
-    return isAdmin;
+    if (this.userService.isAdmin) {
+      return this.userService.isAdmin;
+    } else {
+      return this.router.navigate(['/home']);
+    }
   }
 }
