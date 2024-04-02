@@ -40,4 +40,12 @@ export class ApiService {
     const { apiUrl } = environment;
     return this.http.delete(`${apiUrl}/data/houses/${id}`);
   }
+
+  editProperty(product: Property, id: string) {
+    const { apiUrl } = environment;
+    const payload = product;
+
+    console.log('payload', payload);
+    return this.http.put<Property>(`${apiUrl}/data/houses/${id}`, payload);
+  }
 }

@@ -1,0 +1,70 @@
+.add-property {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 4.7em 10em;
+    width: 70%;
+}
+
+.add-property-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 90%;
+}
+
+.add-property-container h2 {
+    font-size: 1.4rem;
+}
+
+.add-property-container p {
+    font-size: 0.9rem;
+}
+
+.add-property-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-property-container form span {
+    font-size: 0.8rem;
+    color: #8a8a8a;
+    margin-bottom: 4px;
+}
+
+.add-property-container form input {
+    border: 1px solid #8a8a8a;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 1rem;
+    background: var(--bg-color);
+}
+
+.add-property-container form .button {
+    outline: none;
+    border: none;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.add-property-container form a {
+    font-size: 0.9rem;
+    text-align: right;
+}
+
+.add-property-container .btn {
+    border-radius: 0;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+
+.btn {
+    text-align: center !important;
+}
+
+/* Login end*/

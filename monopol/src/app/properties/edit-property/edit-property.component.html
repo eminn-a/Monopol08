@@ -1,0 +1,63 @@
+<section class="add-property container">
+    <div class="add-property-container">
+        <h2>Add your Property!</h2>
+        <!-- add-property form -->
+        <form #form="ngForm" (ngSubmit)="editProperty(form)">
+            <span>Property Town</span>
+            <ng-container *ngIf="inputTown?.errors?.['minlength']">
+                <p class="err-msg">Minimum lenght 4 characters</p>
+            </ng-container>
+            <input type="text" name="place" id="place" placeholder="Town" [ngModel]="property.place"
+                #inputTown="ngModel" minlength="4" required>
+
+            <ng-container *ngIf="inputStreet?.errors?.['minlength']">
+                <p class="err-msg">Minimum lenght 6 characters</p>
+            </ng-container>
+            <span>Property Street</span>
+            <input type="text" name="street" id="street" placeholder="Street" #inputStreet="ngModel"
+                [ngModel]="property.street" minlength="6" required>
+
+            <span>Property m2</span>
+            <input type="number" name="m2" id="m2" placeholder="m2" #inputM2="ngModel" [ngModel]="property.m2" min="1"
+                required>
+
+            <span>Building Year</span>
+            <input type="number" name="year" id="year" placeholder="Year" #inputYear="ngModel" [ngModel]="property.year"
+                min="1980" required>
+
+            <span>Property Bedrooms</span>
+            <input type="number" name="bedrom" id="bedrom" placeholder="Bedroom" #inputBedrooms="ngModel"
+                [ngModel]="property.bedrom" min="1" required>
+
+            <span>Property Bath</span>
+            <input type="number" name="wc" id="wc" placeholder="Bath" #inputBath="ngModel" [ngModel]="property.wc"
+                min="0" required>
+
+            <span>Property Price</span>
+            <input type="number" name="price" id="price" placeholder="Price" #inputPrice="ngModel"
+                [ngModel]="property.price" min="1" required>
+
+
+            <ng-container *ngIf="inputPicture?.errors?.['minlength']">
+                <p class="err-msg">Minimum lenght 10 characters</p>
+            </ng-container>
+            <span>Property Picture</span>
+            <input type="text" name="picture" id="picture" placeholder="Picture" #inputPicture="ngModel"
+                [ngModel]="property.picture" minlength="10" required>
+
+
+            <ng-container *ngIf="inputDescription?.errors?.['minlength']">
+                <p class="err-msg">Minimum lenght 8 characters</p>
+            </ng-container>
+            <span>Property description</span>
+            <textarea type="text" name="description" id="description" rows="4" minlength="8" #inputDescription="ngModel"
+                [ngModel]="property.description" required></textarea>
+            <br>
+
+            <p class="err-msg" *ngIf="allFieldsError">All fields are required!</p>
+
+            <input type="submit" value="Add Property" class="button">
+        </form>
+        <!-- error-msg -->
+    </div>
+</section>

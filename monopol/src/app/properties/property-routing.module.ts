@@ -3,12 +3,23 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddPropertiyComponent } from './add-propertiy/add-propertiy.component';
 import { AuthActivate } from '../guards/auth.activate';
 import { AdminActivate } from '../guards/isAdmin.activate';
+import { EditPropertyComponent } from './edit-property/edit-property.component';
 
 const routes: Routes = [
   {
     path: 'add-property',
     component: AddPropertiyComponent,
     canActivate: [AdminActivate],
+  },
+  {
+    path: 'edit',
+    children: [
+      {
+        path: ':houseId',
+        component: EditPropertyComponent,
+        canActivate: [AdminActivate],
+      },
+    ],
   },
 ];
 
