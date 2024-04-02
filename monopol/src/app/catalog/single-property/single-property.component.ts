@@ -35,7 +35,6 @@ export class SinglePropertyComponent implements OnInit {
         `Are you sure you want to delete this property with id :${this.property._id}`
       )
     ) {
-      console.log(this.property._id);
       this.apiService.deleteProperty(this.property._id).subscribe((data) => {
         this.router.navigate(['/catalog']);
       });

@@ -25,7 +25,6 @@ export class EditPropertyComponent implements OnInit {
     this.activeRote.params.subscribe((data) => {
       const id = data['houseId'];
       this.apiService.getProperty(id).subscribe((property) => {
-        console.log(property);
         this.property = property;
       });
     });
@@ -41,8 +40,6 @@ export class EditPropertyComponent implements OnInit {
     }
     const payloud = form.value;
     const id = this.property._id;
-    console.log('payloud', payloud);
-    console.log('property id', id);
     this.apiService.editProperty(payloud, id).subscribe(() => {
       this.router.navigate(['/catalog', id]);
     });

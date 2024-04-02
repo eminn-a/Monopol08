@@ -52,8 +52,6 @@ export class UserService implements OnDestroy {
             _id: response._id,
             accessToken: response.accessToken,
           });
-
-          console.log('login response', response);
         })
       );
   }
@@ -77,7 +75,6 @@ export class UserService implements OnDestroy {
             _id: response._id,
             accessToken: response.accessToken,
           });
-          console.log('response', response);
         })
       );
   }

@@ -45,7 +45,6 @@ export class ApiService {
     const { apiUrl } = environment;
     const payload = product;
 
-    console.log('payload', payload);
     return this.http.put<Property>(`${apiUrl}/data/houses/${id}`, payload);
   }
 }

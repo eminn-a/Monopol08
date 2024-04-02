@@ -40,7 +40,6 @@ class AppInterceptor implements HttpInterceptor {
     return next.handle(req).pipe(
       catchError((err) => {
         if (err.status === 401) {
-          console.log('401');
         } else if (err.status === 403) {
           err.message = 'Email or password does not match try again!';
           this.errorService.setError(err);

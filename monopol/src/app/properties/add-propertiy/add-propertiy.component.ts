@@ -20,7 +20,6 @@ export class AddPropertiyComponent {
       }, 2000);
       return;
     }
-    console.log(form.value);
     this.apiService.createProperty(form.value).subscribe((data) => {
       this.router.navigate(['/catalog']);
     });
