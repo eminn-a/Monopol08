@@ -13,6 +13,7 @@ import { PropertiesModule } from './properties/properties.module';
 import { appInterceptorPrivoder } from './app.interceptor';
 import { AuthenticateComponent } from './authenticate/authenticate.component';
 import { ErrorComponent } from './core/error/error.component';
+import { AboutModule } from './about/about.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ErrorComponent } from './core/error/error.component';
     HttpClientModule,
     CoreModule,
     HomeModule,
+    AboutModule,
     UserModule,
     CatalogModule,
     SharedModule,

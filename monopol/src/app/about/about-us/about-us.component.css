@@ -1,0 +1,45 @@
+.aboutUs {
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(19rem, auto)); */
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    min-height: 73vh;
+    gap: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.aboutUs-container {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    /* flex-direction: column; */
+}
+
+.aboutUs-img1 img {
+    width: 600px;
+    border-radius: 0 3rem 3rem 3rem;
+}
+
+.aboutUs-img2 img {
+    width: 350px;
+    border-radius: 3rem 3rem 0 3rem;
+}
+
+.aboutUs-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.aboutUs-text h2 {
+    margin-bottom: 0.3em;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.aboutUs-text span {
+    font-weight: 800;
+}

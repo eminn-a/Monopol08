@@ -1544,7 +1544,7 @@
     },
     houses: {
       "0a272c58-b7ea-4e09-a000-7ec988248f66": {
-        _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
+        _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
         place: "Plovdiv",
         street: "District Ostromila",
         m2: "110",
@@ -1556,11 +1556,11 @@
           "It is with great pleasure that we present for sale modern and functional apartments in a new residential complex, located in the southern part of the city of Plovdiv, in the district Ostromila.",
         picture:
           "https://www.powerconstruction.net/sites/default/files/styles/extra_large/public/images/the-main-exterior-dusk-corner-of-building-6.26.2017.jpg?itok=CdqTwe2I",
-        _createdOn: 1614260681375,
+        _createdOn: 1712047561650,
         _id: "0a272c58-b7ea-4e09-a000-7ec988248f66",
       },
-      2: {
-        _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
+      "a22c81ec-05a9-45df-a648-4670e84c1217": {
+        _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
         place: "Rhodopes",
         street: "VILLAGE BELASHTITSA",
         m2: "215",
@@ -1572,11 +1572,11 @@
           "We present a new complex of 10 modern single-family houses in the village of Belashtitsa. An exquisite combination of beauty, comfort, location and gorgeous views with privacy and tranquility.",
         picture:
           "https://static.luximmo.org/property-images/big/1704788855T3_2.jpg",
-        _createdOn: 1614260681375,
-        _id: "2",
+        _createdOn: 1712047517908,
+        _id: "a22c81ec-05a9-45df-a648-4670e84c1217",
       },
-      3: {
-        _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
+      "3446cef6-164d-4a18-9154-086e31e72a6e": {
+        _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
         place: "Plovdiv",
         street: "Village Markovo",
         m2: "120",
@@ -1589,10 +1589,10 @@
         picture:
           "https://img.onmanorama.com/content/dam/mm/en/lifestyle/decor/images/2023/6/1/house-middleclass.jpg",
         _createdOn: 1614260681375,
-        _id: "3",
+        _id: "3446cef6-164d-4a18-9154-086e31e72a6e",
       },
-      4: {
-        _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
+      "3286ad90-5e86-42c4-a98f-16aec57c150d": {
+        _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
         place: "Varna",
         street: "ul.Varna nqkade",
         m2: "173",
@@ -1604,11 +1604,11 @@
           "We offer you this house with a total area of 173 m2. It was constructed in 2015. The property has air-conditioners. A standard air-conditioner - also available. Aluminium window frames, external insulation and laminate flooring are available in the property. ",
         picture:
           "https://www.mydomaine.com/thmb/bepet4VMGUG70sCLFNQRdZm9bbg=/2048x0/filters:no_upscale():strip_icc()/SuCasaDesign-Modern-9335be77ca0446c7883c5cf8d974e47c.jpg",
-        _createdOn: 1614260681375,
-        _id: "4",
+        _createdOn: 1712047407528,
+        _id: "3286ad90-5e86-42c4-a98f-16aec57c150d",
       },
-      5: {
-        _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
+      "81704af3-c912-4053-a226-305fc67d64c4": {
+        _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
         place: "Plovdiv",
         street: "Village Markovo",
         m2: "220",
@@ -1620,11 +1620,11 @@
           "It is with great pleasure that we present a closed residential complex of houses only 5 km from Plovdiv. A place where unique nature and urbanism intertwine. Are you dreaming of luxury, peace, and clean air? You've come to the right place.",
         picture:
           "https://www.rocketmortgage.com/resources-cmsassets/RocketMortgage.com/Article_Images/Large_Images/Stock-Modern-House-With-Large-Pool-AdobeStock-127770833-Copy.jpg",
-        _createdOn: 1614260681375,
-        _id: "5",
+        _createdOn: 1712047297309,
+        _id: "81704af3-c912-4053-a226-305fc67d64c4",
       },
-      6: {
-        _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
+      "94cd3252-223d-477b-8d68-b6136530bce5": {
+        _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
         place: "Haskovo",
         street: "Village Karamantsi",
         m2: "420",
@@ -1636,8 +1636,8 @@
           "It is with great pleasure that we present a closed residential complex of houses only 5 km from Haskovo",
         picture:
           "https://da28rauy2a860.cloudfront.net/completehome/wp-content/uploads/2021/03/03114534/Millbrook-Homes-58series-1.jpg",
-        _createdOn: 1614260681375,
-        _id: "6",
+        _createdOn: 1712047215229,
+        _id: "94cd3252-223d-477b-8d68-b6136530bce5",
       },
     },
     records: {

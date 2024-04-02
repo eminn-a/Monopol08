@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ApiService } from 'src/app/api.service';
 import { Property } from 'src/app/types/property';
 import { UserService } from 'src/app/user/user.service';
@@ -22,13 +22,24 @@ export class SinglePropertyComponent implements OnInit {
   constructor(
     private apiService: ApiService,
     private activeRote: ActivatedRoute,
-    private userService: UserService
+    private userService: UserService,
+    private router: Router
   ) {}
+
+  onDellete() {
+    alert(
+      `Are you sure you want to delete this property with id :${this.property._id}`
+    );
+    console.log(this.property._id);
+    this.apiService.deleteProperty(this.property._id).subscribe((data) => {
+      this.router.navigate(['/catalog']);
+    });
+  }
+
   ngOnInit(): void {
     this.activeRote.params.subscribe((data) => {
       const id = data['houseId'];
       this.apiService.getProperty(id).subscribe((property) => {
-        console.log(property);
         this.property = property;
       });
     });

@@ -24,7 +24,7 @@
                 <a href="" class="btn" *ngIf="isLoggedIn">Buy This House</a>
             </div>
             <div *ngIf="isAdmin">
-                <a class="btn-red">Delete</a>
+                <a class="btn-red" (click)="onDellete()">Delete</a>
                 <a [routerLink]=" ['/edit/', property._id]" class="btn-green">Edit</a>
             </div>
         </div>

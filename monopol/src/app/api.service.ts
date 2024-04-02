@@ -12,9 +12,10 @@ export class ApiService {
 
   getProperties() {
     const { apiUrl } = environment;
-    return this.http.get<Property[]>(`${apiUrl}/data/houses`);
+    return this.http.get<Property[]>(
+      `${apiUrl}/data/houses?sortBy=_createdOn%20desc`
+    );
   }
-  // ?sortBy=_createdOn%20desc&distinct=category
 
   getRecentProperties(limit?: number) {
     const { apiUrl } = environment;
@@ -33,5 +34,10 @@ export class ApiService {
   createProperty(product: Property) {
     const { apiUrl } = environment;
     return this.http.post<Property>(`${apiUrl}/data/houses`, product);
+  }
+
+  deleteProperty(id: string) {
+    const { apiUrl } = environment;
+    return this.http.delete(`${apiUrl}/data/houses/${id}`);
   }
 }
