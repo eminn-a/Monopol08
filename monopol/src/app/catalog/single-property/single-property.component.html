@@ -1,4 +1,5 @@
 <section class="single-house container" id="single-house">
+    <p *ngIf="succesMsg" class="success-message notification">You Buyed this property, Congratulations!</p>
     <div class="single-house-container">
         <div class="single-house-img">
             <img src={{property.picture}} alt="">
@@ -13,7 +14,7 @@
                 <p>WCs: <span>{{property.wc}}</span></p>
                 <br>
                 <hr>
-                <p>Price: <span>${{property.price}}</span></p>
+                <p>Price: <span>€ {{property.price}}</span></p>
                 <hr>
             </div>
             <div>
@@ -21,7 +22,8 @@
                 <p>{{property.description}}</p>
             </div>
             <div>
-                <a href="" class="btn" *ngIf="isLoggedIn">Buy This House</a>
+                <a class="btn" *ngIf="isLoggedIn" (click)="onBuy()">Buy This
+                    Property</a>
             </div>
             <div *ngIf="isAdmin">
                 <a class="btn-red" (click)="onDellete()">Delete</a>

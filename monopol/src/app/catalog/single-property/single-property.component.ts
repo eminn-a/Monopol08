@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { flatMap } from 'rxjs';
 import { ApiService } from 'src/app/api.service';
 import { Property } from 'src/app/types/property';
 import { UserService } from 'src/app/user/user.service';
@@ -18,6 +19,8 @@ export class SinglePropertyComponent implements OnInit {
     return this.userService.isAdmin;
   }
 
+  succesMsg: boolean = false;
+
   property = {} as Property;
   constructor(
     private apiService: ApiService,
@@ -27,13 +30,23 @@ export class SinglePropertyComponent implements OnInit {
   ) {}
 
   onDellete() {
-    alert(
-      `Are you sure you want to delete this property with id :${this.property._id}`
-    );
-    console.log(this.property._id);
-    this.apiService.deleteProperty(this.property._id).subscribe((data) => {
-      this.router.navigate(['/catalog']);
-    });
+    if (
+      confirm(
+        `Are you sure you want to delete this property with id :${this.property._id}`
+      )
+    ) {
+      console.log(this.property._id);
+      this.apiService.deleteProperty(this.property._id).subscribe((data) => {
+        this.router.navigate(['/catalog']);
+      });
+    }
+  }
+
+  onBuy() {
+    this.succesMsg = true;
+    setTimeout(() => {
+      this.succesMsg = false;
+    }, 3000);
   }
 
   ngOnInit(): void {
