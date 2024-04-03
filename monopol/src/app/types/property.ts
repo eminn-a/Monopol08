@@ -11,4 +11,5 @@ export interface Property {
   picture: string;
   _createdOn: number;
   _id: string;
+  odlId?: string;
 }

@@ -1,0 +1,18 @@
+<section class="container" id="personal-propertie">
+    <br>
+    <h1>Your properties:</h1>
+    <ng-container *ngFor=" let property of ownProperties">
+        <a [routerLink]=" ['/catalog/', property.odlId]">
+            <div class="personal-propertie">
+                <div class="personal-propertie-img">
+                    <img src={{property.picture}} alt="">
+                </div>
+                <div class="personal-propertie-text">
+                    <h4><i class="fa-solid fa-location-dot"></i> {{property.place}}, {{property.street}}</h4>
+                    <h4><i class="fa-solid fa-square"></i> {{property.m2}}m²</h4>
+                    <h4><i class="fa-solid fa-euro-sign"></i> {{property.price}}</h4>
+                </div>
+            </div>
+        </a>
+    </ng-container>
+</section>

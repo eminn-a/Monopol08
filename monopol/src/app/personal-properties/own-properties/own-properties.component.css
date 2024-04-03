@@ -1,0 +1,36 @@
+.personal-propertie {
+    margin-top: 2em;
+    display: flex;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 0.5em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    min-height: 78vh;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.container a {
+    color: var(--text-color);
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.personal-propertie-img img {
+    width: 300px;
+    border-radius: 1em;
+}
+
+.personal-propertie-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}

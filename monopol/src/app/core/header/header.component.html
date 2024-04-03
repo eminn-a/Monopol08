@@ -13,6 +13,7 @@
             <li><a routerLink="catalog">Sales</a></li>
             <li><a routerLink="about">About</a></li>
             <li><a routerLink="add-property" *ngIf="isAdmin">Add Properties</a></li>
+            <li><a routerLink="personal-properties" *ngIf="isLoggedIn">My Properties</a></li>
         </ul>
         <!-- login button -->
         <div class="user-navbar">

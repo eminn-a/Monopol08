@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddPropertiyComponent } from './add-propertiy/add-propertiy.component';
-import { AuthActivate } from '../guards/auth.activate';
 import { AdminActivate } from '../guards/isAdmin.activate';
 import { EditPropertyComponent } from './edit-property/edit-property.component';
 

@@ -31,9 +31,9 @@ export class ApiService {
     return this.http.get<Property>(`${apiUrl}/data/houses/${id}`);
   }
 
-  createProperty(product: Property) {
+  createProperty(property: Property) {
     const { apiUrl } = environment;
-    return this.http.post<Property>(`${apiUrl}/data/houses`, product);
+    return this.http.post<Property>(`${apiUrl}/data/houses`, property);
   }
 
   deleteProperty(id: string) {
@@ -41,10 +41,22 @@ export class ApiService {
     return this.http.delete(`${apiUrl}/data/houses/${id}`);
   }
 
-  editProperty(product: Property, id: string) {
+  editProperty(property: Property, id: string) {
     const { apiUrl } = environment;
-    const payload = product;
+    const payload = property;
 
     return this.http.put<Property>(`${apiUrl}/data/houses/${id}`, payload);
+  }
+
+  buyProperty(property: Property) {
+    const { apiUrl } = environment;
+    return this.http.post<Property>(`${apiUrl}/data/buyedProperties`, property);
+  }
+
+  getOwnProperties(userId: string) {
+    const { apiUrl } = environment;
+    return this.http.get<Property[]>(
+      `${apiUrl}/data/buyedProperties?where=_ownerId%3D%22${userId}%22&sortBy=_createdOn%20desc`
+    );
   }
 }

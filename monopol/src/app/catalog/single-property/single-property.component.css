@@ -52,3 +52,8 @@
     text-align: center;
     margin-bottom: 0.7em;
 }
+
+.adminBtns {
+    display: flex;
+    gap: 0.3em;
+}

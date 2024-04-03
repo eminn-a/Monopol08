@@ -14,6 +14,7 @@ import { appInterceptorPrivoder } from './app.interceptor';
 import { AuthenticateComponent } from './authenticate/authenticate.component';
 import { ErrorComponent } from './core/error/error.component';
 import { AboutModule } from './about/about.module';
+import { PersonalPropertiesModule } from './personal-properties/personal-properties.module';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { AboutModule } from './about/about.module';
     CatalogModule,
     SharedModule,
     PropertiesModule,
+    PersonalPropertiesModule,
     AppRoutingModule,
   ],
   providers: [appInterceptorPrivoder],

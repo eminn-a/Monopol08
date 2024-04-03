@@ -6,7 +6,7 @@
         </div>
         <div class="single-house-text">
             <div>
-                <h2>{{property.place}}</h2>
+                <h2><i class="fa-solid fa-location-dot"></i> {{property.place}}</h2>
                 <p>Street: <span> {{property.street}}</span></p>
                 <p>Construction Area m²: <span>{{property.m2}}</span></p>
                 <p>Construction year: <span>{{property.year}}</span></p>
@@ -22,10 +22,10 @@
                 <p>{{property.description}}</p>
             </div>
             <div>
-                <a class="btn" *ngIf="isLoggedIn" (click)="onBuy()">Buy This
+                <a class="btn" (click)="onBuy()">Buy This
                     Property</a>
             </div>
-            <div *ngIf="isAdmin">
+            <div *ngIf="isAdmin" class="adminBtns">
                 <a class="btn-red" (click)="onDellete()">Delete</a>
                 <a [routerLink]=" ['/edit/', property._id]" class="btn-green">Edit</a>
             </div>
