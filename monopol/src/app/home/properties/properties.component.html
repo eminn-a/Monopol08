@@ -9,7 +9,7 @@
         <div class="box" *ngFor="let el of properties">
             <a [routerLink]=" ['/catalog/', el._id]">
                 <img src={{el.picture}} alt="">
-                <h3>${{el.price}}</h3>
+                <h3>€{{el.price}}</h3>
                 <div class="content">
                     <div class="text">
                         <h3>The Place</h3>
