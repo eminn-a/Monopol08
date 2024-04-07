@@ -81,7 +81,7 @@ section {
     }
 }
 
-@media (max-width:780px) {
+@media (max-width:880px) {
     .section {
         padding: 3rem 0 3rem;
     }
@@ -104,6 +104,24 @@ section {
 
     .login img {
         display: none;
+    }
+
+    .email-user {
+        display: none;
+    }
+
+    /* .user-navbar {
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .aboutUs-container {
+        flex-direction: column;
+    }
+
+    .single-house-container {
+        flex-direction: column;
+        padding: 0 2em;
     }
 
 }
@@ -147,13 +165,19 @@ section {
 
     }
 
-    .aboutUs-container {
-        flex-direction: column;
+    .add-property {
+        padding: 5em 8em !important;
+        width: 100% !important;
     }
 
-    .single-house-container {
+    .personal-propertie {
         flex-direction: column;
+        gap: 2em;
         padding: 0 2em;
+    }
+
+    .email-user {
+        display: inline;
     }
 
 }

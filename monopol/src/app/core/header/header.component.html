@@ -16,7 +16,7 @@
         </ul>
         <!-- login button -->
         <div class="user-navbar">
-            <p *ngIf="isLoggedIn">Wellcome <br>{{email}}</p>
+            <p class="email-user" *ngIf="isLoggedIn">Wellcome <br>{{email}}</p>
             <a routerLink="/login" class="btn" *ngIf="!isLoggedIn">Log In</a>
             <a (click)="logout()" class="btn" *ngIf="isLoggedIn">Log Out</a>
         </div>
