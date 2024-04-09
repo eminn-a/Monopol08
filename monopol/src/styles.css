@@ -153,6 +153,7 @@ section {
         margin: 0.3rem;
         padding: 2px;
         color: var(--bg-color) !important;
+
     }
 
     .navbar a:hover {
@@ -162,8 +163,8 @@ section {
 
     #menu:checked~.navbar {
         clip-path: circle(144% at 100% 1%);
-
     }
+
 
     .add-property {
         padding: 5em 8em !important;
