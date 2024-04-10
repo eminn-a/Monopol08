@@ -102,8 +102,13 @@ section {
         justify-content: center;
     }
 
-    .login img {
-        display: none;
+
+
+
+
+    .register {
+        justify-content: center;
+        align-items: center;
     }
 
     .email-user {
@@ -179,6 +184,18 @@ section {
 
     .email-user {
         display: inline;
+    }
+
+    .aboutUs-container {
+        padding: 0 1em;
+    }
+
+    .register img {
+        display: none;
+    }
+
+    .login img {
+        display: none;
     }
 
 }
