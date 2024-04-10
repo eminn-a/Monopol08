@@ -103,9 +103,6 @@ section {
     }
 
 
-
-
-
     .register {
         justify-content: center;
         align-items: center;
@@ -196,6 +193,10 @@ section {
 
     .login img {
         display: none;
+    }
+
+    .single-house-img img {
+        width: 450px !important;
     }
 
 }
