@@ -1446,10 +1446,10 @@
     sessions: {},
   };
   var seedData = {
-    houses: {
+    laptops: {
       "aa613607-9549-46ab-b315-f97dc7682200": {
         _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
-        brand: "aaaAcer Nitro 5 AN515-58-5218",
+        brand: "asdasdasAcer Nitro 5 AN515-58-5218",
         cpu: "Intel Core i9-12900H (1.8/5.0GHz, 24M)",
         gpu: "NVIDIA RTX 4060 8GB GDDR6 DLSS 3",
         ram: "32 GB DDR5 4800 MHz",
@@ -1479,10 +1479,9 @@
           'Лаптоп ASUS ProArt Studiobook Pro 16 H7600ZW-OLED-L751X, 16.0", UHD+, Intel Core i7-12700H (1.7/4.7GHz, 24M), NVIDIA RTX 3070 Ti 8GB, 32 GB, 2 TB SSD - 90NB0XJ1-M001A0 ',
         _createdOn: 1701883448902,
       },
-
       "dca67df0-4052-4a9c-9e2a-2865ea8bf5d0": {
         _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
-        brand: "eeeee",
+        brand: "ASUS ROG Zephyrus Duo 16",
         cpu: "AMD Ryzen 9 7945HX (2.5/5.4GHz, 64M)",
         gpu: "NVIDIA RTX 4080 12 GB GDDR6 DLSS 3",
         ram: "32 GB DDR5 4800 MHz",
@@ -1543,13 +1542,97 @@
         _createdOn: 1701883330858,
       },
     },
-    comments: {
+    houses: {
       "0a272c58-b7ea-4e09-a000-7ec988248f66": {
-        _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-        content: "Great recipe!",
-        recipeId: "8f414b4f-ab39-4d36-bedb-2ad69da9c830",
-        _createdOn: 1614260681375,
+        _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+        place: "Haskovo",
+        street: "Neighborhood Badema",
+        m2: "110",
+        year: "2024",
+        bedrom: "2",
+        wc: "1",
+        price: "93500",
+        description:
+          "Срок на изпълнение - 24 месеца Вътрешно разпределение: - Антре/коридор; - Хол/Всекидневна с кухненски бокс с излаз на тераса; - 2 спални с излаз на тераса; - Баня и тоалетна; Складово помещение.Комплексът ще бъде построен с висококачествени вносни материали от световни фирми, по европейски стандарт с енергиен и шумоизолационен клас.",
+        picture: "../../../assets/property1.png",
+        _createdOn: 1712047561650,
         _id: "0a272c58-b7ea-4e09-a000-7ec988248f66",
+      },
+      "a22c81ec-05a9-45df-a648-4670e84c1217": {
+        _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+        place: "Haskovo",
+        street: "Neighborhood Badema",
+        m2: "101",
+        year: "2024",
+        bedrom: "2",
+        wc: "1",
+        price: "85000",
+        description:
+          "Срок на изпълнение - 24 месеца Вътрешно разпределение: - Антре/коридор; - Хол/Всекидневна с кухненски бокс с излаз на тераса; - 2 спални с излаз на тераса; - Баня и тоалетна; Складово помещение.Комплексът ще бъде построен с висококачествени вносни материали от световни фирми, по европейски стандарт с енергиен и шумоизолационен клас.",
+        picture: "../../../assets/property2.png",
+        _createdOn: 1712047517908,
+        _id: "a22c81ec-05a9-45df-a648-4670e84c1217",
+      },
+      "3446cef6-164d-4a18-9154-086e31e72a6e": {
+        _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+        place: "Haskovo",
+        street: "Neighborhood Badema",
+        m2: "110",
+        year: "2023",
+        bedrom: "2",
+        wc: "1",
+        price: "93500",
+        description:
+          "We present you a gated complex consisting of single-family houses located among the greenery of the southeastern mountain slope, surrounded by a breathtaking natural panorama.",
+        picture: "../../../assets/property3.png",
+        _createdOn: 1614260681375,
+        _id: "3446cef6-164d-4a18-9154-086e31e72a6e",
+      },
+      "3286ad90-5e86-42c4-a98f-16aec57c150d": {
+        _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+        place: "Haskovo",
+        street: "Neighborhood Badema",
+        m2: "101",
+        year: "2022",
+        bedrom: "2",
+        wc: "1",
+        price: "85000",
+        description:
+          "Сграда “C” - Старт на строителството - септември 2023г./ Срок на изпълнение - 24 месеца Вътрешно разпределение: - Антре/коридор; - Хол/Всекидневна с кухненски бокс с излаз на тераса; - 2 спални с излаз на тераса; - Баня и тоалетна; Складово помещение.",
+        picture: "../../../assets/property4.png",
+        _createdOn: 1712047407528,
+        _id: "3286ad90-5e86-42c4-a98f-16aec57c150d",
+      },
+      "81704af3-c912-4053-a226-305fc67d64c4": {
+        _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+        place: "Haskovo",
+        street: "Neighborhood Badema",
+        m2: "104",
+        year: "2021",
+        bedrom: "2",
+        wc: "1",
+        price: "89000",
+        description:
+          "Сграда “C” - Старт на строителството - септември 2023г./ Срок на изпълнение - 24 месеца Вътрешно разпределение: - Антре/коридор; - Хол/Всекидневна с кухненски бокс с излаз на тераса; - 2 спални с излаз на тераса; - Баня и тоалетна; Складово помещение.",
+        picture: "../../../assets/property5.png",
+        _createdOn: 1712047297309,
+        _id: "81704af3-c912-4053-a226-305fc67d64c4",
+      },
+      "94cd3252-223d-477b-8d68-b6136530bce5": {
+        _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+        place: "Haskovo",
+        street: "Village Karamantsi",
+        m2: "420",
+        year: "2020",
+        bedrom: "6",
+        wc: "4",
+        price: "800000",
+        description:
+          "Сграда “C” - Старт на строителството - септември 2023г./ Срок на изпълнение - 24 месеца Вътрешно разпределение: - Антре/коридор; - Хол/Всекидневна с кухненски бокс с излаз на тераса; - 2 спални с излаз на тераса; - Баня и тоалетна; Складово помещение.",
+        picture:
+          "https://da28rauy2a860.cloudfront.net/completehome/wp-content/uploads/2021/03/03114534/Millbrook-Homes-58series-1.jpg",
+        _createdOn: 1712047215229,
+        _id: "94cd3252-223d-477b-8d68-b6136530bce5",
       },
     },
     records: {
@@ -1843,13 +1926,6 @@
   const server = http__default["default"].createServer(
     requestHandler(plugins, services)
   );
-
-  // const port = 3030;
-  // server.listen(port);
-  // console.log(
-  //   `Server started on port ${port}. You can make requests to http://localhost:${port}/`
-  // );
-  // console.log(`Admin panel located at http://localhost:${port}/admin`);
 
   return server;
 });
