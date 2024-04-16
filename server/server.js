@@ -1546,7 +1546,7 @@
       "0a272c58-b7ea-4e09-a000-7ec988248f66": {
         _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
         place: "Haskovo",
-        street: "Нeighborhood Badema",
+        street: "Neighborhood Badema",
         m2: "110",
         year: "2024",
         bedrom: "2",
@@ -1561,7 +1561,7 @@
       "a22c81ec-05a9-45df-a648-4670e84c1217": {
         _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
         place: "Haskovo",
-        street: "Нeighborhood Badema",
+        street: "Neighborhood Badema",
         m2: "101",
         year: "2024",
         bedrom: "2",
@@ -1576,7 +1576,7 @@
       "3446cef6-164d-4a18-9154-086e31e72a6e": {
         _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
         place: "Haskovo",
-        street: "Нeighborhood Badema",
+        street: "Neighborhood Badema",
         m2: "110",
         year: "2023",
         bedrom: "2",
@@ -1591,7 +1591,7 @@
       "3286ad90-5e86-42c4-a98f-16aec57c150d": {
         _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
         place: "Haskovo",
-        street: "Нeighborhood Badema",
+        street: "Neighborhood Badema",
         m2: "101",
         year: "2022",
         bedrom: "2",
@@ -1606,7 +1606,7 @@
       "81704af3-c912-4053-a226-305fc67d64c4": {
         _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
         place: "Haskovo",
-        street: "Нeighborhood Badema",
+        street: "Neighborhood Badema",
         m2: "104",
         year: "2021",
         bedrom: "2",
