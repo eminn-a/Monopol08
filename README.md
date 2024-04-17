@@ -2,7 +2,7 @@
 
 Angular Project
 
-Hosting URL:
+Hosting URL:https://monopo-angular.web.app/home
 
 <img src="/monopol/src/assets/monopol.png" alt="Project Logo" width="700" height="1200">
 
