@@ -21,7 +21,10 @@ class AppInterceptor implements HttpInterceptor {
   ): Observable<HttpEvent<any>> {
     const accessToken = localStorage.getItem('accessToken');
 
-    if (req.url.startsWith('http://localhost:3030') && accessToken) {
+    if (
+      req.url.startsWith('https://api-kwygehix6a-uc.a.run.app') &&
+      accessToken
+    ) {
       req = req.clone({
         setHeaders: {
           'X-Authorization': accessToken,

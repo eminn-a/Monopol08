@@ -9,8 +9,3 @@ setGlobalOptions({ maxInstances: 10 });
 exports.api = onRequest((req, res) => {
   server.emit("request", req, res);
 });
-
-// exports.helloWorld = onRequest((request, response) => {
-//   logger.info("Hello logs!", {structuredData: true});
-//   response.send("Hello from Firebase!");
-// });
