@@ -30,7 +30,7 @@ body {
 }
 
 section {
-    padding: 4.5rem 0 6rem;
+    padding: 4.5rem 0;
 }
 
 .container {
@@ -112,10 +112,10 @@ section {
         display: none;
     }
 
-    /* .user-navbar {
+    .user-navbar {
         display: flex;
-        flex-direction: column;
-    } */
+        flex-direction: column-reverse;
+    }
 
     .aboutUs-container {
         flex-direction: column;
@@ -126,9 +126,11 @@ section {
         padding: 0 2em;
     }
 
+
+
 }
 
-@media (max-width:767px) {
+@media (max-width:768px) {
     .nav {
         padding: 10px 0;
     }
@@ -168,10 +170,7 @@ section {
     }
 
 
-    .add-property {
-        padding: 5em 8em !important;
-        width: 100% !important;
-    }
+
 
     .personal-propertie {
         flex-direction: column;
@@ -181,6 +180,15 @@ section {
 
     .email-user {
         display: inline;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+
+    .about-img {
+        width: 90% !important;
     }
 
     .aboutUs-container {
@@ -196,7 +204,7 @@ section {
     }
 
     .single-house-img img {
-        width: 450px !important;
+        width: 410px !important;
     }
 
 }

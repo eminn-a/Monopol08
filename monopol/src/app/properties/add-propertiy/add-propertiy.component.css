@@ -4,7 +4,6 @@
     justify-content: center;
     min-height: 80vh;
     padding: 4.7em 10em;
-    width: 70%;
 }
 
 .add-property-container {
@@ -67,4 +66,8 @@
     text-align: center !important;
 }
 
-/* Login end*/
+@media (max-width:768px) {
+    .add-property {
+        padding: 0 .3em;
+    }
+}
