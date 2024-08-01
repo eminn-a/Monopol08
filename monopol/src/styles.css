@@ -30,11 +30,8 @@ body {
 }
 
 section {
-<<<<<<< HEAD
-    padding: 4.5rem 0;
-=======
-  padding: 4.5rem 0 6rem;
->>>>>>> a0d2696f02bc7cc4effe837a69c3971c00c08e20
+  padding: 4.5rem 0;
+
 }
 
 .container {
@@ -113,33 +110,23 @@ section {
     display: none;
   }
 
-<<<<<<< HEAD
-    .email-user {
-        display: none;
-    }
 
-    .user-navbar {
-=======
-  /* .user-navbar {
->>>>>>> a0d2696f02bc7cc4effe837a69c3971c00c08e20
-        display: flex;
-        flex-direction: column-reverse;
-    }
+  .user-navbar {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
   .aboutUs-container {
     flex-direction: column;
   }
 
-<<<<<<< HEAD
-
-
 }
 
 @media (max-width:768px) {
-    .nav {
-        padding: 10px 0;
-    }
-=======
+  .nav {
+    padding: 10px 0;
+  }
+
   .single-house-container {
     flex-direction: column;
     padding: 0 2em;
@@ -150,7 +137,7 @@ section {
   .nav {
     padding: 10px 0;
   }
->>>>>>> a0d2696f02bc7cc4effe837a69c3971c00c08e20
+
 
   #menu-icon {
     display: initial !important;
@@ -181,7 +168,7 @@ section {
     transition: 0.2;
   }
 
-  #menu:checked ~ .navbar {
+  #menu:checked~.navbar {
     clip-path: circle(144% at 100% 1%);
   }
 
@@ -196,13 +183,11 @@ section {
     padding: 0 2em;
   }
 
-<<<<<<< HEAD
 
-=======
   .email-user {
     display: inline;
   }
->>>>>>> a0d2696f02bc7cc4effe837a69c3971c00c08e20
+
 
   .aboutUs-container {
     padding: 0 1em;
@@ -212,40 +197,38 @@ section {
     display: none;
   }
 
-<<<<<<< HEAD
-    .about {
-        flex-direction: column;
-    }
+
+  .about {
+    flex-direction: column;
+  }
 
 
-    .about-img {
-        width: 90% !important;
-    }
+  .about-img {
+    width: 90% !important;
+  }
 
-    .aboutUs-container {
-        padding: 0 1em;
-    }
+  .aboutUs-container {
+    padding: 0 1em;
+  }
 
-    .register img {
-        display: none;
-    }
+  .register img {
+    display: none;
+  }
 
-    .login img {
-        display: none;
-    }
-
-    .single-house-img img {
-        width: 410px !important;
-    }
-
-}
-=======
   .login img {
     display: none;
   }
 
   .single-house-img img {
-    width: 450px !important;
+    width: 410px !important;
   }
+
 }
->>>>>>> a0d2696f02bc7cc4effe837a69c3971c00c08e20
+
+.login img {
+  display: none;
+}
+
+.single-house-img img {
+  width: 450px !important;
+}
